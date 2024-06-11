@@ -1,11 +1,23 @@
-import css from "./SearchBox.module.css";
+import { Formik, Form, Field } from 'formik';
+// import clsx from 'clsx';
+import styles from './SearchBox.module.css';
 
-export const SearchBox = ({ onChange }) => {
+const SearchBox = ({ value, onChange }) => {
   return (
-    <form className={css.form}>
-      <label>Find contact by name</label>
-      <input type="text" onChange={(evt) => onChange(evt.target.value)} />
-    </form>
+    <Formik initialValues={{ search: value }} onSubmit={() => {}}>
+      <Form className={styles.searchBox}>
+        <label htmlFor="search">Find contacts by name</label>
+        <Field
+          className={styles.searchField}
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Enter name"
+          value={value}
+          onChange={onChange}
+        />
+      </Form>
+    </Formik>
   );
 };
 
