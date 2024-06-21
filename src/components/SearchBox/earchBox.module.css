@@ -1,20 +1,19 @@
-.searchBox {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-bottom: 50px;
-  max-width: 500px;
-  font-size: 20px;
+.box{
+  display: block;
+  padding: 10px;
+  margin-bottom: 10px;  
   border: 1px solid black;
-  border-radius: 10px;
-  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
 }
 
-.formBtn {
-  border: 1px solid black;
+.label{
+  font-size: large;
+  font-weight: 500;
 }
-
-.searchField {
-  border-radius: 2px;
-  
+.input{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
 }

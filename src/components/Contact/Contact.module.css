@@ -1,18 +1,24 @@
-.itemContact {
-    width: 220px;
-    border: 1px solid black;
-    border-radius: 10%;
-  }
-  
-  li {
-    list-style: none;
-  }
-  
-  .itemContactName {
-    color: black;
-    font-size: 16px;
-    font-weight: 500;
-  }
-  .itemIcon {
-    border: 1px solid black;
-  }
+.fullContact{
+  display: flex;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactInfo{
+  display: block;
+  gap: 10px; 
+  line-height: 1.2em;
+  font-size: large;
+  font-weight: 500;
+  width: 200px;
+}
+.btn{
+  padding: 10px;
+  background-color: lightgray;
+  border: 1px solid black;
+  border-radius: 5px;
+}

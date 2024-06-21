@@ -4,7 +4,7 @@ import { ContactForm } from "./components/ContactForm/ContactForm";
 import { ContactList } from "./components/ContactList/ContactList";
 import SearchBox from "./components/SearchBox/SearchBox"
 import { contactList } from "./components/helper";
-
+ const [searchValue, setSearchValue] = useState("");
 function App() {
   const savedContactList = JSON.parse(
     window.localStorage.getItem("saved-contacts")
